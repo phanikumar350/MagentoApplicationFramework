@@ -5,15 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdec6189-bace-4acf-95d7-85941625b339" name="Changes" comment="Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/driverManager/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/AccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/CreateAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module/Signout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SignOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SignUpDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SignUpDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/AccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/CreateAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/CreateAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/SignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/Signout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/Signout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SignUpDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SignUpDefinitions.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "phanikumar350"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/phanikumar350/MagentoApplicationFramework.git",
+    "accountId": "07ebcc4f-1868-4105-a480-77b487107d73"
+  }
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/module/HomePage.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/SignUpDefinitions.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -27,13 +72,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Maven.MagentoApplicationFramework [clean].executor": "Run",
+    "Maven.MagentoApplicationFramework [compile].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.TestRunner.executor": "Run",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RunManager">
@@ -140,9 +189,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/module/HomePage.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/module/SignIn.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
