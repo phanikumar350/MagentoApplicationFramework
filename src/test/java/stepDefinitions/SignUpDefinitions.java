@@ -5,40 +5,31 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import lombok.Getter;
+import lombok.Setter;
 import module.*;
 import org.openqa.selenium.WebDriver;
 import io.cucumber.datatable.DataTable;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 public class SignUpDefinitions extends BaseTest {
 
 
+    @Getter
+    @Setter
     private String email;
+    @Setter
+    @Getter
     private String password;
     WebDriver driver;
     CreateAccount createAccount;
     HomePage homePage;
-    Signout signout;
+    SignOut signOut;
     AccountPage account;
-    SignIn signin;
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    SignIn signIn;
 
     @Before
     public void setup() {
@@ -46,8 +37,8 @@ public class SignUpDefinitions extends BaseTest {
         homePage = new HomePage(driver);
         createAccount = new CreateAccount(driver);
         account = new AccountPage(driver);
-        signout = new Signout(driver);
-        signin = new SignIn(driver);
+        signOut = new SignOut(driver);
+        signIn = new SignIn(driver);
         driver.get("https://magento.softwaretestingboard.com/");
     }
 
@@ -60,7 +51,9 @@ public class SignUpDefinitions extends BaseTest {
     public void user_provides_the_following_details(DataTable dataTable) {
         String email;
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-        for (Map<String, String> arg : data) {
+        Iterator<Map<String, String>> map = data.iterator();
+        for (Iterator<Map<String, String>> it = data.iterator(); it.hasNext(); ) {
+            Map<String, String> arg = it.next();
             String timeStamp = String.valueOf(System.currentTimeMillis());
             this.setEmail(arg.get("Email").replace("<timestamp>", timeStamp));
             email = this.getEmail();
@@ -81,12 +74,12 @@ public class SignUpDefinitions extends BaseTest {
 
     @Then("Sign out")
     public void signOut() {
-        signout.clickSignOut();
+        signOut.clickSignOut();
     }
 
     @When("Signing using credentials")
     public void signingUsingCredentials() {
-        signin.siginInUsingCreds(this.getEmail(), this.getPassword());
+        signIn.signInInUsingCredentials(this.getEmail(), this.getPassword());
     }
 
     @Then("user should be successfully logged in")
