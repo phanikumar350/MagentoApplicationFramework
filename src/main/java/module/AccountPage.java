@@ -32,6 +32,9 @@ public class AccountPage {
     public void isRegistrationSuccessful(String message) {
         try {
             boolean success = successMessage.isDisplayed() && header.isDisplayed();
+            if (success) {
+                System.out.println("Success message is displayed " + message);
+            }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -40,6 +43,9 @@ public class AccountPage {
     public void isSignInSuccessful() {
         try {
             boolean success = header.isDisplayed();
+            if (success) {
+                System.out.println("header is displayed, signIn is success");
+            }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

@@ -3,7 +3,6 @@ package module;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -47,7 +46,7 @@ public class SignIn {
     public void signInInUsingCredentials(String email, String password) {
         signInInButton.click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-        WebElement iframe = wait.until(ExpectedConditions.visibilityOf(emailTextbox));
+        wait.until(ExpectedConditions.visibilityOf(emailTextbox));
         emailTextbox.sendKeys(email);
         passwordTextBox.sendKeys(password);
         signInButton.click();
