@@ -1,5 +1,6 @@
 package module;
 
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AccountPage {
 
-    WebDriver driver;
+    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
+    private WebDriver driver;
 
     public AccountPage(WebDriver driver) {
         this.driver = driver;

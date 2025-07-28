@@ -1,5 +1,8 @@
 package module;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,25 +11,44 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CreateAccount {
 
-    WebDriver driver;
+    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
+    private WebDriver driver;
 
     public CreateAccount(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
+    @Getter
+    @Setter
     @FindBy(xpath = "//input[@id='firstname']")
-    WebElement firstName;
+    private WebElement firstName;
+
+    @Getter
+    @Setter
     @FindBy(xpath = "//input[@id='lastname']")
-    WebElement lastName;
+    private WebElement lastName;
+
+    @Getter
+    @Setter
     @FindBy(xpath = "//input[@id='email_address']")
-    WebElement email;
+    private WebElement email;
+
+    @Getter
+    @Setter
     @FindBy(xpath = "//input[@id='password']")
-    WebElement password;
+    private WebElement password;
+
+    @Getter
+    @Setter
     @FindBy(xpath = "//input[@id='password-confirmation']")
-    WebElement confirmPassword;
+    private WebElement confirmPassword;
+
+    @Getter
+    @Setter
     @FindBy(xpath = "//div[@class='primary']//child::button[@title='Create an Account']")
-    WebElement createAnAccountButton;
+    private WebElement createAnAccountButton;
 
     public void fillSignupForm(String firstName, String lastName, String email, String password) {
         this.firstName.sendKeys(firstName);

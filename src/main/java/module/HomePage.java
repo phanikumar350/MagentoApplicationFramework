@@ -1,5 +1,8 @@
 package module;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,14 +15,24 @@ import java.time.Duration;
 
 public class HomePage {
 
-    WebDriver driver;
+    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
+    private WebDriver driver;
 
+    @Getter
+    @Setter
     @FindBy(xpath = "//header[@class='page-header']//ul[@class='header links']//li//a[contains(text(),'Create an Account')]")
-    WebElement createAccountButton;
+    private WebElement createAccountButton;
+
+    @Getter
+    @Setter
     @FindBy(xpath = "//div[@id='dismiss-button' and @aria-label='Close ad']")
-    WebElement closeAdButton;
+    private WebElement closeAdButton;
+
+    @Getter
+    @Setter
     @FindBy(xpath = "(//iframe[contains(@id,'aswift')])[last()]")
-    WebElement frame_ads;
+    private WebElement frame_ads;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
