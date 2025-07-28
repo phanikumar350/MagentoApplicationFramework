@@ -1,6 +1,8 @@
 package module;
 
-import org.openqa.selenium.By;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,26 +14,39 @@ import java.time.Duration;
 
 public class SignIn {
 
-    WebDriver driver;
+    @Getter(AccessLevel.NONE)
+    @Setter(AccessLevel.NONE)
+    private WebDriver driver;
 
     public SignIn(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
+    @Getter
+    @Setter
     @FindBy(xpath = "//header[@class='page-header']//ul[@class='header links']//li//a[contains(text(),'Sign In')]")
-    WebElement signInInButton;
+    private WebElement signInInButton;
+
+    @Getter
+    @Setter
     @FindBy(xpath = "//input[@id='email']")
-    WebElement emailTextbox;
+    private WebElement emailTextbox;
+
+    @Getter
+    @Setter
     @FindBy(xpath = "//fieldset[@class='fieldset login']//input[@id='pass' and @type='password']")
-    WebElement passwordTextBox;
+    private WebElement passwordTextBox;
+
+    @Getter
+    @Setter
     @FindBy(xpath = "(//div[@class='primary']//button[@id='send2'])[1]")
-    WebElement signInButton;
+    private WebElement signInButton;
 
     public void signInInUsingCredentials(String email, String password) {
         signInInButton.click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-        WebElement iframe = wait.until(ExpectedConditions.visibilityOf(emailTextbox));
+        wait.until(ExpectedConditions.visibilityOf(emailTextbox));
         emailTextbox.sendKeys(email);
         passwordTextBox.sendKeys(password);
         signInButton.click();

@@ -4,27 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdec6189-bace-4acf-95d7-85941625b339" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/driverManager/DriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="bdec6189-bace-4acf-95d7-85941625b339" name="Changes" comment="Added the @Getter and @Setter Annotations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/AccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/CreateAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module/Signout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SignOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SignUpDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SignUpDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module/SignOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SignOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/AccountPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module/CreateAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/CreateAccount.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/SignIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module/Signout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/Signout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SignUpDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SignUpDefinitions.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +68,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.TestRunner.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feature-branch",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -166,7 +156,31 @@
       <option name="project" value="LOCAL" />
       <updated>1753687131802</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Made the things much sophisticated">
+      <option name="closed" value="true" />
+      <created>1753708212249</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753708212249</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Made the things much sophisticated">
+      <option name="closed" value="true" />
+      <created>1753708227658</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753708227658</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added the @Getter and @Setter Annotations">
+      <option name="closed" value="true" />
+      <created>1753708719600</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753708719600</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,14 +197,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commited the projected" />
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Made the things much sophisticated" />
+    <MESSAGE value="Added the @Getter and @Setter Annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the @Getter and @Setter Annotations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/module/SignIn.java</url>
-          <line>31</line>
+          <line>46</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
